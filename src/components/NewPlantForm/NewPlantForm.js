@@ -15,7 +15,7 @@ const NewPlantForm = () => {
 
     const addNewPlant = event => {
         event.preventDefault();
-        dispatch({ type: 'ADD_PLANT', payload: newPlant });
+        dispatch({ type: 'POST_PLANT', payload: newPlant });
         //updates the next plant to have a new id
         setPlant({id:newPlant.id + 1, name: ''});
     }
